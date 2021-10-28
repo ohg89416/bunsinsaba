@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="365dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mainimage"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="20dp"
+        android:text="Game Start"
+        android:backgroundTint="@color/black"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="@color/black"
+        android:clickable="true"
+        android:text="Setting" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:backgroundTint="@color/black"
+        android:clickable="true"
+        android:text="End" />
+
+
+</LinearLayout>
