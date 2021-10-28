@@ -9,11 +9,11 @@
     android:background="@drawable/warning">
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/startgame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="520dp"
         android:textSize="20dp"
         android:text="시작하기"
         android:backgroundTint="@color/black"

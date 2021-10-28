@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //start 버튼 클릭시 StartActivity 로 이동
+        //start 버튼 클릭시 WarningActivity 로 이동
         Button startBtn = findViewById(R.id.start);
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StartActivity.class);
+                Intent intent = new Intent(MainActivity.this, WarningActivity.class);
                 startActivity(intent);
             }
         });
