@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".StartActivity"
-    android:background="@color/black">
+    android:background="@drawable/oxone">
 
 
 
