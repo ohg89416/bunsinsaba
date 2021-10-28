@@ -4,16 +4,23 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.scarybgm);
+        //mediaPlayer.setLooping(true); //무한재생
+        mediaPlayer.start();
 
         //start 버튼 클릭시 WarningActivity 로 이동
         Button startBtn = findViewById(R.id.start);
