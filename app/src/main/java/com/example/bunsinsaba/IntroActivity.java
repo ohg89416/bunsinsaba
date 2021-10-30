@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
+
 public class IntroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +18,7 @@ public class IntroActivity extends AppCompatActivity {
                 startActivity(intent); //인트로 실행 후 바로 MainActivity로 넘어감.
                 finish();
             }
-        }, 2000); //1초 후 인트로 실행
+        }, 3000); //1초 후 인트로 실행
     }
 
     @Override
