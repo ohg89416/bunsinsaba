@@ -15,10 +15,10 @@ public class IntroActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent); //인트로 실행 후 바로 MainActivity로 넘어감.
+                startActivity(intent); //인트로 실행 후 바로 Main Activity 로 넘어감.
                 finish();
             }
-        }, 3000); //1초 후 인트로 실행
+        }, 3000); //3초 후 인트로 실행
     }
 
     @Override

@@ -14,13 +14,11 @@ public class WarningActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_warning);
 
-        Intent intent = getIntent();
-
     Button startBtn = findViewById(R.id.startgame);
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WarningActivity.this, StartActivity.class);
+                Intent intent = new Intent(WarningActivity.this, OldschoolActivity.class);
                 startActivity(intent);
             }
         });

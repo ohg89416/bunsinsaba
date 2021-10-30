@@ -22,6 +22,7 @@
 
         <activity android:name=".StartActivity"/>
         <activity android:name=".WarningActivity"/>
+        <activity android:name=".OldschoolActivity"/>
         <activity android:name=".MainActivity"/>
 
     </application>
