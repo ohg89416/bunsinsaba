@@ -9,6 +9,7 @@
     android:background="@color/black">
 
     <ImageView
+        android:id="@+id/mainghost"
         android:layout_width="220dp"
         android:layout_height="365dp"
         android:layout_gravity="center_horizontal"

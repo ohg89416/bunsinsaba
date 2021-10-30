@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,9 +21,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         mediaPlayer = MediaPlayer.create(this, R.raw.scarybgm);
         //mediaPlayer.setLooping(true); //무한재생
         mediaPlayer.start();
+
+        //메인 귀신 이미지가 서서히 나타나게 하는 효과
+        ImageView image = (ImageView)findViewById(R.id.mainghost);
+        Animation ghostanimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        image.startAnimation(ghostanimation);
+
 
         //start 버튼 클릭시 WarningActivity 로 이동
         Button startBtn = findViewById(R.id.start);
